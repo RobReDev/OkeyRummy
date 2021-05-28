@@ -22,7 +22,7 @@ body {
 .board_2 {
     margin-top: 10px;
     margin-left: 280px;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .bank {
@@ -115,12 +115,29 @@ body {
     background-color: green;
 }
 
-.circle {
-    width: 25px;
-    height: 25px;
-    background-color: #050000;
-    border: 1px solid black;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
+.opponent_score, .your_score {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid black;
+    width: 15%;
+    height: 30px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+.opponent_score {
+    top: 215px;
+    left: 600px;
+}
+.opponent_score span {
+    margin-left: 10px;
+}
+.your_score {
+    left: 600px;
+    top: 500px;
+}
+.your_score span {
+    margin-left: 10px;
 }
